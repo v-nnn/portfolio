@@ -1,5 +1,3 @@
-// Simple JavaScript for the portfolio MVP
-
 document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('nav a');
