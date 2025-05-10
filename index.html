@@ -3,86 +3,629 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishav Nandha - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vishav Nandha | Healthcare Tech Professional</title>
+    <meta name="description" content="Portfolio of Vishav Nandha - Healthcare professional with expertise in programming and technical solutions.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
+    <!-- Header & Navigation -->
+    <header class="header">
         <div class="container">
-            <h1 class="logo">Vishav Nandha</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+            <nav class="nav">
+                <div class="logo">
+                    <a href="#" class="logo-link">VN</a>
+                </div>
+                
+                <div class="nav-toggle" id="navToggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                    <li class="nav-item"><a href="#references" class="nav-link">References</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item theme-toggle">
+                        <button id="themeToggle" aria-label="Toggle dark/light mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div id="particles-js" class="particles-container"></div>
         <div class="container">
-            <h1 class="fade-in">Healthcare IT Professional</h1>
-            <p class="fade-in">Combining healthcare experience with technical innovation.</p>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Healthcare technology professional with hands-on experience at Fraser Health, combining technical expertise with deep operational knowledge. Self-motivated problem-solver who identified process inefficiencies and developed a custom automation solution that improved workflow efficiency.</p>
-
-            <div class="skills">
-                <h3>Skills</h3>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>HTML5 & CSS3</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>Healthcare Systems</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>My Projects</h2>
-
-            <div class="project-card">
-                <h3>Dark Mode PDF Converter</h3>
-                <p>Browser-based tool that transforms standard PDFs into dark mode for improved nighttime reading using color inversion algorithms and hue rotation.</p>
-                <div class="project-links">
-                    <a href="https://www.youtube.com/watch?v=c1ApLNgK8oU&t=5s" target="_blank">View Demo</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3>Google Search Clone</h3>
-                <p>Functional replication of Google's search interfaces (standard, image, and advanced search) with fully-functional redirects to Google results.</p>
-                <div class="project-links">
-                    <a href="https://www.youtube.com/watch?v=D4mck5haE9Y" target="_blank">View Demo</a>
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello, I'm</span>
+                    <span class="name" id="typingName">Vishav Nandha</span>
+                </h1>
+                <h2 class="hero-subtitle" id="typingSubtitle">Healthcare Professional & Developer</h2>
+                <p class="hero-description">Bridging healthcare operations with innovative technical solutions</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:vishav.nandha@fraserhealth.ca">vishav.nandha@fraserhealth.ca</a></p>
-            <p>Phone: 604-614-4884</p>
-            <p>Location: Surrey, BC, Canada</p>
-            <p>Website: <a href="https://v-nnn.github.io" target="_blank">v-nnn.github.io</a></p>
+        <div class="hero-scroll-indicator">
+            <a href="#about" aria-label="Scroll to About section">
+                <i class="fas fa-chevron-down"></i>
+            </a>
         </div>
     </section>
 
-    <footer>
+    <!-- About Section -->
+    <section class="about-section" id="about">
         <div class="container">
-            <p>&copy; 2025 Vishav Nandha</p>
+            <h2 class="section-title" data-text="About Me">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <div class="image-placeholder">
+                            <img src="/images/headshot_circle.png" alt="Vishav Nandha Profile Picture">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-subtitle">Healthcare Professional with a Technical Edge</h3>
+                    <p class="about-description">
+                        As a Switchboard Operator at Fraser Health, I've gained valuable insight into healthcare operations while developing technical solutions that enhance efficiency. My unique background combines healthcare experience with programming skills, allowing me to create innovative solutions to real-world challenges.
+                    </p>
+                    <p class="about-description">
+                        Recently completed two advanced coding projects: a PDF Dark Mode Converter that transforms documents for improved accessibility, and a fully functional Google Search Engine replica featuring web, image, and advanced search capabilities. Both projects demonstrate my ability to solve complex problems through strategic web programming and attention to user experience. 
+                    </p>
+                    <p class="about-description">
+                        I hold a Bachelor's degree in Criminology with a Minor in Business from Simon Fraser University and am currently pursuing a Computing Science certificate from SFU. My technical foundation includes Harvard CS50's Introduction to Computer Science certificate, while I simultaneously advance my expertise through Harvard's CS50 Web Programming with Python and JavaScript course—bringing a unique multidisciplinary approach to technical problem-solving.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Surrey, BC, Canada</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Simon Fraser University</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Fraser Health</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title" data-text="My Skills">My Skills</h2>
+            <div class="skills-categories">
+                <button class="category-btn active" data-category="programming">Programming</button>
+                <button class="category-btn" data-category="web">Web Development</button>
+                <button class="category-btn" data-category="database">Database</button>
+                <button class="category-btn" data-category="tools">Tools & Technologies</button>
+            </div>
+            
+            <div class="skills-content">
+                <!-- Programming Skills -->
+                <div class="skills-category active" data-category="programming">
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="JavaScript">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <h3 class="skill-name">JavaScript</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Python">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <h3 class="skill-name">Python</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Java">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <h3 class="skill-name">Java</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="C">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="skill-name">C</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Web Development Skills -->
+                <div class="skills-category" data-category="web">
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="HTML">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <h3 class="skill-name">HTML</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="CSS">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <h3 class="skill-name">CSS</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Flask">
+                            <div class="skill-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <h3 class="skill-name">Flask</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Database Skills -->
+                <div class="skills-category" data-category="database">
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="SQL">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3 class="skill-name">SQL</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Database Management">
+                            <div class="skill-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3 class="skill-name">Database Management</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Technologies -->
+                <div class="skills-category" data-category="tools">
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="TamperMonkey">
+                            <div class="skill-icon">
+                                <i class="fas fa-wrench"></i>
+                            </div>
+                            <h3 class="skill-name">TamperMonkey</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Chrome Developer Tools">
+                            <div class="skill-icon">
+                                <i class="fab fa-chrome"></i>
+                            </div>
+                            <h3 class="skill-name">Chrome Developer Tools</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="Healthcare Systems">
+                            <div class="skill-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3 class="skill-name">Healthcare Systems</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section-title" data-text="My Projects">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Google Replica -->
+                <div class="project-card featured-project">
+                    <div class="project-content">
+                        <div class="project-front">
+                            <div class="project-image">
+                                <div class="video-container">
+                                    <iframe 
+                                        src="https://www.youtube.com/embed/D4mck5haE9Y" 
+                                        title="Google Search Engine Replica" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            <h3 class="project-title">Google Search Engine Replica</h3>
+                            <button class="project-details-btn">View Details</button>
+                            <p class="project-description">
+                                Created a functional replica of Google's search interface using HTML and CSS, implementing functional search capabilities by connecting user queries to Google's actual search engine.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                            </div>
+                            <!-- <button class="project-details-btn">View Details</button> -->
+                        </div>
+                        <div class="project-back">
+                            <h3 class="project-title">Google Search Engine Replica</h3>
+                            <div class="project-details">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Replicated Google's main search interface with pixel-perfect HTML/CSS design</li>
+                                    <li>Implemented Google Images search functionality with identical user experience</li>
+                                    <li>Created Advanced Search page with multiple specialized filter options</li>
+                                    <li>Built custom query parameters for precise searches (exact phrases, required/excluded terms)</li>
+                                    <li>Documented the entire development process</li>
+                                </ul>
+                                <a href="https://www.youtube.com/watch?v=D4mck5haE9Y" class="btn btn-sm" target="_blank">
+                                    Watch Demo <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <button class="project-back-btn">Back</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PDF Dark Mode Converter -->
+                <div class="project-card featured-project">
+                    <div class="project-content">
+                        <div class="project-front">
+                            <div class="project-image">
+                                <div class="video-container">
+                                    <iframe 
+                                        src="https://www.youtube.com/embed/c1ApLNgK8oU" 
+                                        title="Lumina: PDF Dark Mode Converter" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                            <h3 class="project-title">PDF Dark Mode Converter</h3>
+                            <button class="project-details-btn">View Details</button>
+                            <p class="project-description">
+                                Developed a PDF Dark Mode Converter using HTML, CSS, and JavaScript that transforms documents through color inversion and 180-degree hue rotation, creating accessible night-reading alternatives while maintaining document integrity and readability.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <!-- <button class="project-details-btn">View Details</button> -->
+                        </div>
+                        <div class="project-back">
+                            <h3 class="project-title">PDF Dark Mode Converter</h3>
+                            <div class="project-details">
+                                <h4>Key Features</h4>
+                                <ul>
+                                    <li>Developed a browser-based PDF transformation tool using HTML, CSS, and JavaScript</li>
+                                    <li>Implemented color inversion algorithm to convert light backgrounds to dark mode</li>
+                                    <li>Applied 180-degree hue rotation to ensure optimal color contrast and readability</li>
+                                    <li>Created intuitive user interface for seamless PDF processing and viewing experience</li>
+                                    <li>Documented the entire development process</li>
+                                </ul>
+                                <a href="https://www.youtube.com/watch?v=c1ApLNgK8oU" class="btn btn-sm" target="_blank">
+                                    Watch Demo <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                            <button class="project-back-btn">Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <h2 class="section-title" data-text="Experience">Experience</h2>
+            <div class="timeline">
+                <!-- Fraser Health -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Jun 2022 - Present</div>
+                    <div class="timeline-content">
+                        <h3>Switchboard Operator</h3>
+                        <h4>Fraser Health Call Center</h4>
+                        <p>
+                            Handling switchboard operations for Fraser Health, inputting discharge requests for multiple 
+                            hospitals in the Lower Mainland, and developing technical solutions to improve operational efficiency.
+                        </p>
+                        <div class="timeline-highlights">
+                            <span class="highlight">Healthcare Systems</span>
+                            <span class="highlight">Technical Solutions</span>
+                            <span class="highlight">Process Improvement</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sodexo Call Center -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Aug 2021 - Jun 2022</div>
+                    <div class="timeline-content">
+                        <h3>Call Center Operator</h3>
+                        <h4>Sodexo Call Center</h4>
+                        <p>
+                            Dispatched housekeepers, ensured accurate request inputs, and maintained safety protocol 
+                            compliance during dispatch operations.
+                        </p>
+                        <div class="timeline-highlights">
+                            <span class="highlight">Dispatch Management</span>
+                            <span class="highlight">Safety Protocols</span>
+                            <span class="highlight">Data Accuracy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- McDonald's -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Mar 2018 - Jun 2021</div>
+                    <div class="timeline-content">
+                        <h3>Crew Member</h3>
+                        <h4>McDonald's (10240 King George)</h4>
+                        <p>
+                            Prepared food in a timely manner, communicated with team members to ensure freshness,
+                            and maintained operational efficiency in a fast-paced environment.
+                        </p>
+                        <div class="timeline-highlights">
+                            <span class="highlight">Team Communication</span>
+                            <span class="highlight">Time Management</span>
+                            <span class="highlight">Customer Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Experience Ends Above This -->
+
+    <!-- Begin Education -->
+    <section>
+        <div class="education" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education-items">
+                <!-- Bachelors + Minor -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h4>Simon Fraser University</h4>
+                    <p>Bachelor's Degree | Major in Criminology, Minor in Business</p>
+                </div>
+
+                <!-- Computing Science Certificate -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <h4>Simon Fraser University</h4>
+                    <p>Certificate in Computing Science | In Progress...</p>
+                </div>
+
+                <!-- CS50 -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4>Harvard CS50</h4>
+                    <p>Introduction to Computer Science | Certificate</p>
+                </div>
+
+                <!-- CS50W -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4>Harvard CS50</h4>
+                    <p>Introduction to Web Programming with Python and JavaScript | In Progress...</p>
+                </div>
+
+                <!-- Github Foundations Certificate -->
+                <div class="education-item">
+                    <div class="education-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4>Github</h4>
+                    <p>Github Foundations Certificate | In Progress...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- References Section -->
+    <section id="references" class="section">
+        <div class="container">
+            <h2 class="section-title text-center">References</h2>
+            
+            <div class="references-grid">
+                <div class="reference-card">
+                    <div class="reference-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="reference-content">
+                        <h3 class="reference-name">Peter Boothe</h3>
+                        <p class="reference-position">Manager (Call Center)</p>
+                        <ul class="reference-contact">
+                            <li><i class="fas fa-phone"></i> (236) 632-2361</li>
+                            <li><i class="fas fa-envelope"></i> peter.boothe@fraserhealth.ca</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="reference-card">
+                    <div class="reference-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="reference-content">
+                        <h3 class="reference-name">Jenny Farooq</h3>
+                        <p class="reference-position">PAH Manager</p>
+                        <ul class="reference-contact">
+                            <li><i class="fas fa-phone"></i> (604) 807-7915</li>
+                            <li><i class="fas fa-envelope"></i> zarifa.farooq1@fraserhealth.ca</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="reference-card">
+                    <div class="reference-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="reference-content">
+                        <h3 class="reference-name">Sandra Alvarado</h3>
+                        <p class="reference-position">Coordinator</p>
+                        <ul class="reference-contact">
+                            <li><i class="fas fa-phone"></i> (604) 897-2358</li>
+                            <li><i class="fas fa-envelope"></i> sandra.alvarado@fraserhealth.ca</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="reference-card">
+                    <div class="reference-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="reference-content">
+                        <h3 class="reference-name">Mihiret Mekonnen</h3>
+                        <p class="reference-position">Coordinator</p>
+                        <ul class="reference-contact">
+                            <li><i class="fas fa-phone"></i> (236) 332-7292</li>
+                            <li><i class="fas fa-envelope"></i> mihiret.mekonnen@fraserhealth.ca</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-text="Contact Me">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Surrey, BC</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p>
+                                <a href="mailto:vishav.nandha@fraserhealth.ca">vishav.nandha@fraserhealth.ca</a><br>
+                                <a href="mailto:vishavnandha@hotmail.de">vishavnandha@hotmail.de</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p><a href="tel:6046144884">604-614-4884</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">VN</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#education">Education</a>
+                    <a href="#references">References</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/v-nnn" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vishav Nandha. All Rights Reserved.</p>
+            </div>
+        </div>
+        <button id="scrollToTop" aria-label="Scroll to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
     </footer>
-    
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>
