@@ -934,6 +934,7 @@ p {
     color: var(--primary-color); /* Keep the hover effect working */
 }
 
+
 /* ===== PROJECTS SECTION ===== */
 .projects-grid {
     display: grid;
@@ -970,6 +971,7 @@ p {
     transform-style: preserve-3d;
     transition: transform 0.8s;
 }
+
 
 .project-front, .project-back {
     position: absolute;
