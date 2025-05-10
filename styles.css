@@ -1700,6 +1700,77 @@ p {
         flex-direction: column; /* Stack vertically on mobile */
         gap: 3rem;
     }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 2rem;
+    }
+    
+    .project-content {
+        width: 90%; /* Wider content area on mobile */
+    }
+    
+    .featured-project {
+        height: auto; /* Let height adjust to content on mobile */
+    }
+    
+    .video-container {
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    }
+
+    /* Increase touch target sizes for mobile */
+    .nav-link {
+        padding: 1rem 0.5rem; /* Larger touch area */
+    }
+    
+    .btn, .category-btn, .project-details-btn, .project-back-btn {
+        padding: 1.2rem 2.4rem; /* Ensure buttons are touch-friendly */
+        min-height: 44px; /* Apple's recommended minimum touch target size */
+    }
+    
+    .tech-tag {
+        padding: 0.7rem 1.2rem; /* Larger touch area for tags */
+    }
+
+    /* Better timeline for mobile */
+    .timeline::before {
+        left: 3rem;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 7rem;
+        padding-right: 1rem;
+    }
+    
+    .timeline-dot {
+        left: 2.8rem !important;
+    }
+
+    /* Enhanced mobile navigation */
+    .nav-menu.active {
+        right: 0;
+        box-shadow: -5px 0 25px rgba(0, 0, 0, 0.15);
+        height: 100vh;
+        padding-top: 2rem;
+        overflow-y: auto;
+    }
+    
+    .nav-item {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    .nav-link {
+        display: block;
+        font-size: 1.8rem;
+        padding: 1.2rem 0;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    [data-theme="dark"] .nav-link {
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1883,5 +1954,27 @@ p {
     .category-btn {
         width: 100%;
         text-align: center;
+    }
+
+    /* General mobile improvements */
+    .section {
+        padding: 4rem 0;
+    }
+    
+    .reference-card {
+        flex-direction: column;
+    }
+    
+    .reference-icon {
+        margin: 0 auto 2rem;
+    }
+    
+    .education-item {
+        padding: 2rem 1.5rem;
+    }
+    
+    h1, h2, h3, h4, p {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 }
