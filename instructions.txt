@@ -1,0 +1,4 @@
+Running portfolio website 
+
+In terminal enter:
+python -m http.server 8000
